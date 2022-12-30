@@ -3,6 +3,7 @@ import 'package:flutter_application_4/animated_icon.dart';
 import 'package:flutter_application_4/animated_position.dart';
 import 'package:flutter_application_4/animated_size.dart';
 import 'package:flutter_application_4/animated_switcher.dart';
+import 'package:flutter_application_4/chat_gpt.dart';
 import 'package:flutter_application_4/drag_bottom_screen.dart';
 import 'package:flutter_application_4/listview_screen.dart';
 import 'package:flutter_application_4/physicalModelScreen.dart';
@@ -82,6 +83,11 @@ class MainApp extends StatelessWidget {
                     label: const Text("Tween Animation"),
                     onSelected: (value) {
                       Get.to(() => FlutterAnimations());
+                    }),
+                FilterChip(
+                    label: const Text("ChatGpt"),
+                    onSelected: (value) {
+                      Get.to(() => ChatGpt());
                     }),
               ],
             ),
